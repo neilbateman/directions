@@ -15,7 +15,7 @@ class App extends React.Component {
   componentDidMount = () => {
     const mode = 'driving'; // 'walking';
     const origin = 'Puppet, Portland';
-    const destination = 'Pioneer Courthouse, Portland';
+    const destination = 'Greenbriar Apartments, Portland';
     const APIKEY = 'AIzaSyDApoxd20oQKzx3PzWr_sACWsQ0HRGGLN0';
     const url = `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${destination}&key=${APIKEY}&mode=${mode}`;
     fetch(url)
@@ -84,9 +84,9 @@ renderRoute (coords, i) {
         style={styles.mapStyle}
         >
         <MapView.Polyline
-  coordinates={[...this.state.coords]}
-  strokeWidth={4}
-/>
+          coordinates={[...this.state.coords]}
+          strokeWidth={4}
+          />
         </MapView>
     </View>
   );
