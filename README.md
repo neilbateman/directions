@@ -11,7 +11,7 @@ cd directions
 npm i
 expo start
 ```
-![screenshot](/assets/screenshot.png)
+![screenshot](/assets/screenshot2.png)
 ## Usage
 
 Origin and Destination currently hardcoded from Puppet office to my apartment
