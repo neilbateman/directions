@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import MapView from 'react-native-maps';
-
+import {apiKeys} from './env'
 
 
 
@@ -13,10 +13,11 @@ class App extends React.Component {
 
 
   componentDidMount = () => {
+    console.log(apiKeys)
     const mode = 'driving'; // 'walking';
     const origin = 'Puppet, Portland';
     const destination = 'Greenbriar Apartments, Portland';
-    const APIKEY = 'AIzaSyDApoxd20oQKzx3PzWr_sACWsQ0HRGGLN0';
+    const APIKEY = apiKeys.mapKey;
     const url = `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${destination}&key=${APIKEY}&mode=${mode}`;
     fetch(url)
       .then(response => response.json())
