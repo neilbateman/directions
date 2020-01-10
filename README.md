@@ -1,11 +1,11 @@
 # directions
 
 directions is a work in progress. Uses Google Maps Platform Directions API and react-native-maps, built with Expo
-
+![screenshot](/assets/Screenshot2.png)
 
 ## Installation
 If you have the expo app, scan the qr code 
-![qr](/assets/qr.png)![screenshot](/assets/Screenshot2.png)
+![qr](/assets/qr.png)
 
 ```bash
 git clone https://github.com/neilbateman/directions.git
